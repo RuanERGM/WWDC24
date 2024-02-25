@@ -12,6 +12,8 @@ struct ContentView: View {
                 
             }
             ZStack{
+                
+                
                 HStack {
                     
                     
@@ -96,6 +98,68 @@ struct ContentView: View {
                         }
                         .position(x:950,y: 1130)
                 }
+                HStack{
+                    Rectangle()
+                        .fill(Color.blue)
+                        .frame(width: 30,height: 200)
+                        .onTapGesture {
+                            SoundManager.shared.playSound(sound: "C#", type: ".mp3")
+                            
+                        }
+                        .position(x:125,y: 1050)
+                    Rectangle()
+                        .fill(Color.blue)
+                        .frame(width: 30,height: 200)
+                        .onTapGesture {
+                            SoundManager.shared.playSound(sound: "D#", type: ".mp3")
+                            
+                        }
+                        .position(x:-263,y: 1050)
+                    
+                    
+                }
+                
+                HStack{
+                    Rectangle()
+                        .fill(Color.blue)
+                        .frame(width: 30,height: 200)
+                        .onTapGesture {
+                            SoundManager.shared.playSound(sound: "F#", type: ".mp3")
+                            
+                        }
+                        .position(x:510,y: 1050)
+                    
+                    Rectangle()
+                        .fill(Color.blue)
+                        .frame(width: 30,height: 200)
+                        .onTapGesture {
+                            SoundManager.shared.playSound(sound: "G#", type: ".mp3")
+                            
+                        }
+                        .position(x:121,y: 1050)
+                }
+                
+                HStack{
+                    Rectangle()
+                        .fill(Color.blue)
+                        .frame(width: 30,height: 200)
+                        .onTapGesture {
+                            SoundManager.shared.playSound(sound: "A#", type: ".mp3")
+                            
+                        }
+                        .position(x:760,y: 1050)
+                    
+                    Rectangle()
+                        .fill(Color.blue)
+                        .frame(width: 30,height: 200)
+                        .onTapGesture {
+                            SoundManager.shared.playSound(sound: "C3#", type: ".mp3")
+                            
+                        }
+                        .position(x:500,y: 1050)
+                }
+                
+            
             }
             
         }
